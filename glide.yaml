@@ -1,0 +1,14 @@
+package: github.com/mfojtik/depcheck
+import:
+- package: github.com/BurntSushi/toml
+  version: ^0.3.1
+- package: github.com/Masterminds/glide
+  version: ^0.13.2
+  subpackages:
+  - cfg
+- package: github.com/openshift/api
+  version: ^3.9.0
+  subpackages:
+  - image/v1
+- package: github.com/pkg/errors
+  version: ^0.8.1
