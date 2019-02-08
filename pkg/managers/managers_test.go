@@ -4,7 +4,7 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"github.com/mfojtik/depcheck/pkg/payload"
+	"github.com/rootAvish/depcheck/pkg/payload"
 )
 
 func TestFetchManagerManifests(t *testing.T) {

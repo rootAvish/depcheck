@@ -1,8 +1,8 @@
 package vgo
 
 import (
-	"github.com/mfojtik/depcheck/pkg/managers/version"
-	"github.com/mfojtik/depcheck/pkg/managers/vgo/modfile"
+	"github.com/rootAvish/depcheck/pkg/managers/version"
+	"github.com/rootAvish/depcheck/pkg/managers/vgo/modfile"
 )
 
 func ParseManifest(manifest map[string][]byte) ([]version.Dependency, error) {

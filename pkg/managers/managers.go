@@ -8,11 +8,11 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/mfojtik/depcheck/pkg/managers/dep"
-	"github.com/mfojtik/depcheck/pkg/managers/glide"
-	"github.com/mfojtik/depcheck/pkg/managers/version"
-	"github.com/mfojtik/depcheck/pkg/managers/vgo"
-	"github.com/mfojtik/depcheck/pkg/payload"
+	"github.com/rootAvish/depcheck/pkg/managers/dep"
+	"github.com/rootAvish/depcheck/pkg/managers/glide"
+	"github.com/rootAvish/depcheck/pkg/managers/version"
+	"github.com/rootAvish/depcheck/pkg/managers/vgo"
+	"github.com/rootAvish/depcheck/pkg/payload"
 )
 
 type ManifestType string

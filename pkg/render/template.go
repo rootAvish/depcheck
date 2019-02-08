@@ -7,7 +7,8 @@ const HTMLTemplate = `<html>
 <body>
 <h3>{{.Payload.Image}}</h3>
 <p class="lead small text-right">
-{{.Payload.Digest}}
+{{.Payload.Digest}}<br/>
+Generated at {{.LastUpdate}}
 </p>
 <table class="table table-striped">
 <tbody>

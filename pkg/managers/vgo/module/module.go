@@ -24,7 +24,7 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"github.com/mfojtik/depcheck/pkg/managers/vgo/semver"
+	"github.com/rootAvish/depcheck/pkg/managers/vgo/semver"
 )
 
 // A Version is defined by a module path and version pair.

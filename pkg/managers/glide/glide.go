@@ -2,7 +2,7 @@ package glide
 
 import (
 	"github.com/Masterminds/glide/cfg"
-	"github.com/mfojtik/depcheck/pkg/managers/version"
+	"github.com/rootAvish/depcheck/pkg/managers/version"
 )
 
 func ParseManifest(manifest map[string][]byte) ([]version.Dependency, error) {

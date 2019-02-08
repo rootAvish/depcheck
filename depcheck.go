@@ -13,9 +13,9 @@ import (
 
 	"k8s.io/apimachinery/pkg/util/wait"
 
-	"github.com/mfojtik/depcheck/pkg/managers"
-	"github.com/mfojtik/depcheck/pkg/payload"
-	"github.com/mfojtik/depcheck/pkg/render"
+	"github.com/rootAvish/depcheck/pkg/managers"
+	"github.com/rootAvish/depcheck/pkg/payload"
+	"github.com/rootAvish/depcheck/pkg/render"
 )
 
 func main() {
@@ -87,9 +87,11 @@ func updateReport(payloadFile string, reportFile string) error {
 	out, err := renderFile("table", []byte(render.HTMLTemplate), struct {
 		Payload      payload.Payload
 		Repositories []*managers.RepositoryWithManifest
+		LastUpdate   time.Time
 	}{
 		Payload:      *p,
 		Repositories: reposWithManifests,
+		LastUpdate:   time.Now(),
 	})
 	if err != nil {
 		return fmt.Errorf("unable to render template: %v", err)
